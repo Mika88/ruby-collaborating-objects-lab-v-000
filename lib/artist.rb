@@ -17,14 +17,16 @@ class Artist
 
   def save
     @@all << self
-    @@all
   end
 
+  def self.all
+    @@all
+  end
 
   def self.find_or_create_by_name(name)
      self.all.find do |artist|
       if artist == name
-
+        
       else
         name = self.new(name)
       end
