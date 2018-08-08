@@ -15,6 +15,6 @@ class Song
     #song.artist.add_song(song)
     artist.songs << song
     song
-binding.pry
+
   end
 end
