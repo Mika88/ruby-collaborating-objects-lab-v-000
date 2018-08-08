@@ -19,14 +19,11 @@ class Artist
     @@all << self
   end
 
-  def self.all
-    @@all
-  end
 
   def self.find_or_create_by_name(name)
      self.all.find do |artist|
-      if artist == self.name
-        puts self.class
+      if artist == name
+        
       else
         name = self.new(name)
       end
