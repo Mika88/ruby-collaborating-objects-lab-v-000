@@ -24,6 +24,7 @@ class Artist
               end
     if !artist
         artist = self.new(name)
+        artist.save
     end
     artist
   end
