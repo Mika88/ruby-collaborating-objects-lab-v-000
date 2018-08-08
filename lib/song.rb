@@ -14,6 +14,6 @@ class Song
     #song.artist.add_song(song)
     artist.songs << song
     song
-  
+
   end
 end
